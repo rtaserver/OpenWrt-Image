@@ -1,4 +1,3 @@
-#云编译公用核心
 name: WRT-CORE
 
 on:
@@ -227,12 +226,9 @@ jobs:
           tag_name: ${{env.WRT_TARGET}}_${{env.WRT_SOURCE}}_${{env.WRT_DATE}}
           files: ./wrt/upload/*.*
           body: |
-            这是个平台固件包，内含多个设备！
-            请注意选择你需要的设备固件！
-            不要问，更就完事了！
 
-            源码：${{env.WRT_SOURCE}}
-            平台：${{env.WRT_TARGET}}
-            设备：${{env.WRT_TYPE}}
-            密码：${{env.WRT_PW}}
-            地址：${{env.WRT_IP}}
+            Source：${{env.WRT_SOURCE}}
+            Target：${{env.WRT_TARGET}}
+            Type：${{env.WRT_TYPE}}
+            Password：${{env.WRT_PW}}
+            IP：${{env.WRT_IP}}
