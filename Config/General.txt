@@ -1,3 +1,6 @@
+#Image Builder
+CONFIG_IB=y
+CONFIG_IMAGEOPT=y
 #USB驱动
 CONFIG_PACKAGE_kmod-usb2=y
 CONFIG_PACKAGE_kmod-usb3=y
