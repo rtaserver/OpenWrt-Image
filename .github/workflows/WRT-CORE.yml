@@ -187,30 +187,19 @@ jobs:
           du -h --max-depth=1
           echo "======================="
 
-      - name: Package Firmware
+      - name: Organize firmware-related files
+        id: organize-files
         run: |
-          cd ./wrt/ && mkdir ./upload/
-
-          cp -rf ./.config ./upload/Config_"$WRT_TARGET"_"$WRT_SOURCE"_"$WRT_DATE".txt
-
-          if [[ $WRT_CFG == 'false' ]]; then
-            rm -rf $(find ./bin/targets/ -iregex ".*\(buildinfo\|json\|manifest\|sha256sums\|packages\)$")
-
-            for TYPE in $WRT_TYPE ; do
-              for FILE in $(find ./bin/targets/ -type f -iname "*$TYPE*.*") ; do
-                EXT=$(basename $FILE | cut -d '.' -f 2-)
-                NAME=$(basename $FILE | cut -d '.' -f 1 | grep -io "\($TYPE\).*")
-                NEW_FILE="$WRT_SOURCE"_"$NAME"_"$WRT_DATE"."$EXT"
-                mv -f $FILE ./upload/$NEW_FILE
-              done
-            done
-          fi
+          cd ./wrt/bin/targets/*/*
+          rm -rf packages/
+          echo "FIRMWARE=$PWD" >> $GITHUB_ENV
+          echo "status=success" >> $GITHUB_OUTPUT
 
       - name: Release Firmware
         uses: softprops/action-gh-release@master
         with:
-          tag_name: ${{env.WRT_TARGET}}_${{env.WRT_SOURCE}}_${{env.WRT_DATE}}
-          files: ./wrt/upload/*.*
+          tag_name: ${{env.WRT_TARGET}}_${{env.WRT_SOURCE}}
+          files: ${{ env.FIRMWARE }}/*
           body: |
             This is a platform firmware package that contains multiple devices!
             Please pay attention to select the device firmware you need!
