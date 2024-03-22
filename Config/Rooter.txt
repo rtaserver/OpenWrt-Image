@@ -1,2 +1,0 @@
-CONFIG_PACKAGE_ext-rooter-basic=y
-CONFIG_PACKAGE_ext-rooter-lite=y
