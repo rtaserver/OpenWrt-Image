@@ -11,7 +11,7 @@ jobs:
   wrt_config:
     uses: ./.github/workflows/WRT-CORE.yml
     with:
-      WRT_TARGET: X86-64
+      WRT_TARGET: X64
       WRT_THEME: argon
       WRT_NAME: OWRT
       WRT_WIFI: OWRT
