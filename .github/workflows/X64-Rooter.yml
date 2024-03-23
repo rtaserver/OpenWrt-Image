@@ -11,11 +11,11 @@ jobs:
   wrt_config:
     uses: ./.github/workflows/WRT-CORE.yml
     with:
-      WRT_TARGET: X64
+      WRT_TARGET: X86-64
       WRT_THEME: argon
       WRT_NAME: OWRT
       WRT_WIFI: OWRT
       WRT_PW: password
       WRT_IP: 192.168.1.1
-      WRT_URL: https://github.com/ofmodemsandmen/ROOterSource2305.git
+      WRT_URL: https://github.com/ofmodemsandmen/ROOterSource2203.git
       WRT_BRANCH: main
