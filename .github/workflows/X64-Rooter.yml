@@ -17,5 +17,5 @@ jobs:
       WRT_WIFI: OWRT
       WRT_PW: password
       WRT_IP: 192.168.1.1
-      WRT_URL: https://github.com/ofmodemsandmen/ROOterSource2203.git
+      WRT_URL: https://github.com/ofmodemsandmen/ROOterSource2305.git
       WRT_BRANCH: main
