@@ -1,128 +1,206 @@
-# WLAN Utilities
-CONFIG_PACKAGE_wpad-openssl=y
-CONFIG_PACKAGE_wpa-supplicant=y
-CONFIG_PACKAGE_wireless-tools=y
-CONFIG_PACKAGE_wireless-regdb=y
-CONFIG_PACKAGE_kmod-cfg80211=y
-CONFIG_PACKAGE_kmod-lib80211=y
-CONFIG_PACKAGE_kmod-mac80211=y
+#
+# ROOter
+#
 
-# WLAN Drivers
-CONFIG_PACKAGE_kmod-ath=y
-CONFIG_PACKAGE_kmod-ath6kl=y
-CONFIG_PACKAGE_kmod-ath6kl-usb=y
-CONFIG_PACKAGE_kmod-ath9k=y
-CONFIG_PACKAGE_kmod-ath9k-common=y
-CONFIG_PACKAGE_kmod-ath9k-htc=y
-CONFIG_PACKAGE_kmod-ath10k=y
-CONFIG_PACKAGE_kmod-ath11k=n
-CONFIG_PACKAGE_kmod-b43=y
-CONFIG_PACKAGE_kmod-b43legacy=y
-CONFIG_PACKAGE_kmod-brcmfmac=y
-CONFIG_PACKAGE_kmod-brcmutil=y
-CONFIG_PACKAGE_kmod-carl9170=y
-CONFIG_PACKAGE_kmod-iwl-legacy=y
-CONFIG_PACKAGE_kmod-iwl3945=y
-CONFIG_PACKAGE_kmod-iwl4965=y
-CONFIG_PACKAGE_kmod-iwlwifi=y
-CONFIG_PACKAGE_kmod-libertas-usb=y
-CONFIG_PACKAGE_kmod-libipw=y
-CONFIG_PACKAGE_kmod-mt76-connac=y
-CONFIG_PACKAGE_kmod-mt76-core=y
-CONFIG_PACKAGE_kmod-mt76-usb=y
-CONFIG_PACKAGE_kmod-mt7601u-ap=y
-CONFIG_PACKAGE_kmod-mt7603=y
-CONFIG_PACKAGE_kmod-mt7615-common=y
-CONFIG_PACKAGE_kmod-mt7615-firmware=y
-CONFIG_PACKAGE_kmod-mt7615e=y
-CONFIG_PACKAGE_kmod-mt7663-usb-sdio=y
-CONFIG_PACKAGE_kmod-mt7663u=y
-CONFIG_PACKAGE_kmod-mt76x0-common=y
-CONFIG_PACKAGE_kmod-mt76x02-common=y
-CONFIG_PACKAGE_kmod-mt76x02-usb=y
-CONFIG_PACKAGE_kmod-mt76x0e=y
-CONFIG_PACKAGE_kmod-mt76x0u=y
-CONFIG_PACKAGE_kmod-mt76x2=y
-CONFIG_PACKAGE_kmod-mt76x2-common=y
-CONFIG_PACKAGE_kmod-mt76x2u=y
-CONFIG_PACKAGE_kmod-mt7915e=y
-CONFIG_PACKAGE_kmod-mt7921e=y
-CONFIG_PACKAGE_kmod-mt7921-common=y
-CONFIG_PACKAGE_kmod-mwifiex-pcie=y
-CONFIG_PACKAGE_kmod-mwl8k=y
-CONFIG_PACKAGE_kmod-net-prism54=y
-CONFIG_PACKAGE_kmod-net-rtl8192su=y
-CONFIG_PACKAGE_kmod-p54-common=y
-CONFIG_PACKAGE_kmod-p54-pci=y
-CONFIG_PACKAGE_kmod-p54-usb=y
-CONFIG_PACKAGE_kmod-rsi91x=y
-CONFIG_PACKAGE_kmod-rsi91x-usb=y
-CONFIG_PACKAGE_kmod-rt2400-pci=y
-CONFIG_PACKAGE_kmod-rt2500-pci=y
-CONFIG_PACKAGE_kmod-rt2500-usb=y
-CONFIG_PACKAGE_kmod-rt2800-lib=y
-CONFIG_PACKAGE_kmod-rt2800-mmio=y
-CONFIG_PACKAGE_kmod-rt2800-pci=y
-CONFIG_PACKAGE_kmod-rt2800-usb=y
-CONFIG_PACKAGE_kmod-rt2x00-lib=y
-CONFIG_PACKAGE_kmod-rt2x00-mmio=y
-CONFIG_PACKAGE_kmod-rt2x00-pci=y
-CONFIG_PACKAGE_kmod-rt2x00-usb=y
-CONFIG_PACKAGE_kmod-rt61-pci=y
-CONFIG_PACKAGE_kmod-rt73-usb=y
-CONFIG_PACKAGE_kmod-rtl8180=y
-CONFIG_PACKAGE_kmod-rtl8187=y
-CONFIG_PACKAGE_kmod-rtl8188eu=y
-CONFIG_PACKAGE_kmod-rtl8192c-common=y
-CONFIG_PACKAGE_kmod-rtl8192ce=y
-CONFIG_PACKAGE_kmod-rtl8192cu=y
-CONFIG_PACKAGE_kmod-rtl8192de=y
-CONFIG_PACKAGE_kmod-rtl8192eu=y
-CONFIG_PACKAGE_kmod-rtl8192se=y
-CONFIG_PACKAGE_kmod-rtl8812au-ac=y
-CONFIG_PACKAGE_kmod-rtl8821ae=y
-CONFIG_PACKAGE_kmod-rtl8821cu=y
-CONFIG_PACKAGE_kmod-rtl88x2bu=y
-CONFIG_PACKAGE_kmod-rtlwifi=y
-CONFIG_PACKAGE_kmod-rtlwifi-btcoexist=y
-CONFIG_PACKAGE_kmod-rtlwifi-pci=y
-CONFIG_PACKAGE_kmod-rtlwifi-usb=y
-CONFIG_PACKAGE_kmod-rtw88=y
-CONFIG_PACKAGE_kmod-wil6210=y
+#
+# Basic Applications
+#
+# CONFIG_PACKAGE_arc-storage is not set
+# CONFIG_PACKAGE_ext-command is not set
+# CONFIG_PACKAGE_ext-extra is not set
+# CONFIG_PACKAGE_ext-p910nd is not set
+# CONFIG_PACKAGE_luci-app-guestwifi is not set
+# CONFIG_PACKAGE_usb-storage is not set
+# end of Basic Applications
 
-# WLAN Firmware
-CONFIG_PACKAGE_ath9k-htc-firmware=y
-CONFIG_PACKAGE_libertas-usb-firmware=y
-CONFIG_PACKAGE_mt7601u-firmware=y
-CONFIG_PACKAGE_p54-usb-firmware=y
-CONFIG_PACKAGE_prism54-firmware=y
-CONFIG_PACKAGE_rs9113-firmware=y
-CONFIG_PACKAGE_rt2800-usb-firmware=y
-CONFIG_PACKAGE_rt73-usb-firmware=y
-CONFIG_PACKAGE_rtl8188eu-firmware=y
-CONFIG_PACKAGE_rtl8192cu-firmware=y
-CONFIG_PACKAGE_rtl8192eu-firmware=y
-CONFIG_PACKAGE_rtl8192su-firmware=y
-CONFIG_PACKAGE_rtl8723au-firmware=y
-CONFIG_PACKAGE_rtl8723bu-firmware=y
+#
+# Basic Support
+#
+CONFIG_PACKAGE_ext-buttons=y
+CONFIG_PACKAGE_ext-rooter-basic=y
+CONFIG_PACKAGE_ext-sms=y
+# end of Basic Support
 
-# WWAN
-CONFIG_PACKAGE_comgt-ncm=y
-CONFIG_PACKAGE_comgt=y
-CONFIG_PACKAGE_picocom=y
-CONFIG_PACKAGE_qmi-utils=y
-CONFIG_PACKAGE_umbim=y
-CONFIG_PACKAGE_uqmi=y
-CONFIG_PACKAGE_usb-modeswitch=y
-CONFIG_PACKAGE_kmod-mii=y
-CONFIG_PACKAGE_kmod-usb-acm=y
-CONFIG_PACKAGE_kmod-usb-serial=y
-CONFIG_PACKAGE_kmod-usb-serial-option=y
-CONFIG_PACKAGE_kmod-usb-serial-wwan=y
-CONFIG_PACKAGE_kmod-usb-net-rndis=y
-CONFIG_PACKAGE_kmod-usb-net-qmi-wwan=y
-CONFIG_PACKAGE_kmod-usb-net-huawei-cdc-ncm=y
-CONFIG_PACKAGE_luci-proto-3g=y
-CONFIG_PACKAGE_luci-proto-modemmanager=y
-CONFIG_PACKAGE_luci-proto-ncm=y
-CONFIG_PACKAGE_luci-proto-qmi=y
+#
+# BuildSections
+#
+# CONFIG_PACKAGE_build-admin is not set
+# CONFIG_PACKAGE_build-iphone is not set
+# CONFIG_PACKAGE_build-luci is not set
+# CONFIG_PACKAGE_build-mwan3 is not set
+# CONFIG_PACKAGE_build-openvpn is not set
+# CONFIG_PACKAGE_build-themes is not set
+# CONFIG_PACKAGE_build-usb is not set
+# CONFIG_PACKAGE_build-utils is not set
+# CONFIG_PACKAGE_build-wifi is not set
+# CONFIG_PACKAGE_ext-custom-basic is not set
+# CONFIG_PACKAGE_ext-lte is not set
+# end of BuildSections
+
+#
+# CustomBuilds
+#
+# CONFIG_PACKAGE_ext-custom-level0 is not set
+# CONFIG_PACKAGE_ext-custom-level1 is not set
+# CONFIG_PACKAGE_ext-custom-level2 is not set
+# CONFIG_PACKAGE_ext-custom-level3 is not set
+# CONFIG_PACKAGE_ext-custom-level4 is not set
+# CONFIG_PACKAGE_ext-custom-level5 is not set
+# CONFIG_PACKAGE_ext-custom-multi is not set
+# CONFIG_PACKAGE_ext-custom-multi-openvpn is not set
+# end of CustomBuilds
+
+#
+# CustomBuilds16
+#
+# CONFIG_PACKAGE_ext-custom-level016 is not set
+# CONFIG_PACKAGE_ext-custom-level116 is not set
+# CONFIG_PACKAGE_ext-custom-level216 is not set
+# CONFIG_PACKAGE_ext-custom-level316 is not set
+# CONFIG_PACKAGE_ext-custom-level416 is not set
+# CONFIG_PACKAGE_ext-custom-level516 is not set
+# end of CustomBuilds16
+
+#
+# Drivers
+#
+CONFIG_PACKAGE_rmbim=y
+CONFIG_PACKAGE_rqmi=y
+# end of Drivers
+
+#
+# Mesh Support
+#
+# CONFIG_PACKAGE_mesh-mesh is not set
+# CONFIG_PACKAGE_mesh-wpad is not set
+# CONFIG_PACKAGE_meshs is not set
+# end of Mesh Support
+
+#
+# Optional Applications
+#
+# CONFIG_PACKAGE_bwallocate is not set
+# CONFIG_PACKAGE_bwmon is not set
+# CONFIG_PACKAGE_ext-autoapn is not set
+# CONFIG_PACKAGE_ext-basicmenu is not set
+# CONFIG_PACKAGE_ext-blacklist is not set
+# CONFIG_PACKAGE_ext-blockport is not set
+# CONFIG_PACKAGE_ext-domain is not set
+# CONFIG_PACKAGE_ext-flash is not set
+# CONFIG_PACKAGE_ext-gps is not set
+# CONFIG_PACKAGE_ext-hotspot is not set
+# CONFIG_PACKAGE_ext-logo is not set
+# CONFIG_PACKAGE_ext-menu is not set
+# CONFIG_PACKAGE_ext-netselect is not set
+# CONFIG_PACKAGE_ext-openwisp is not set
+# CONFIG_PACKAGE_ext-ota is not set
+# CONFIG_PACKAGE_ext-repeater is not set
+# CONFIG_PACKAGE_ext-rspeedtest is not set
+# CONFIG_PACKAGE_ext-simpin is not set
+# CONFIG_PACKAGE_ext-simplegps is not set
+# CONFIG_PACKAGE_ext-speedtest is not set
+# CONFIG_PACKAGE_ext-texting is not set
+# CONFIG_PACKAGE_ext-throttle is not set
+# CONFIG_PACKAGE_ext-wireguard is not set
+# CONFIG_PACKAGE_ext-wizard is not set
+# CONFIG_PACKAGE_ext-zerotier is not set
+# CONFIG_PACKAGE_extramenu is not set
+# CONFIG_PACKAGE_multi-wifi is not set
+# CONFIG_PACKAGE_netrestart is not set
+# CONFIG_PACKAGE_pingtest is not set
+# CONFIG_PACKAGE_qlog is not set
+# CONFIG_PACKAGE_quec_upload is not set
+# CONFIG_PACKAGE_udp-tunnel is not set
+# CONFIG_PACKAGE_webconsole is not set
+# end of Optional Applications
+
+#
+# Protocols
+#
+# CONFIG_PACKAGE_luci-proto-3x is not set
+# end of Protocols
+
+#
+# Router Specific
+#
+# CONFIG_PACKAGE_alix2d13 is not set
+# CONFIG_PACKAGE_apu2c4 is not set
+# CONFIG_PACKAGE_b1300 is not set
+# CONFIG_PACKAGE_d240 is not set
+# CONFIG_PACKAGE_dir860l is not set
+# CONFIG_PACKAGE_ext-omnia is not set
+# CONFIG_PACKAGE_ext-ssh is not set
+# CONFIG_PACKAGE_fscheck is not set
+# CONFIG_PACKAGE_h721 is not set
+# CONFIG_PACKAGE_mesh1608 is not set
+# CONFIG_PACKAGE_mt1300 is not set
+# CONFIG_PACKAGE_rbm11g is not set
+# CONFIG_PACKAGE_rbm33g is not set
+# CONFIG_PACKAGE_rbsxtr is not set
+# CONFIG_PACKAGE_rd05a1 is not set
+# CONFIG_PACKAGE_vpnpolicy is not set
+# CONFIG_PACKAGE_we826 is not set
+# CONFIG_PACKAGE_we826q is not set
+# CONFIG_PACKAGE_wg1602 is not set
+# CONFIG_PACKAGE_wg1608 is not set
+# CONFIG_PACKAGE_wg209 is not set
+# CONFIG_PACKAGE_wg259 is not set
+# CONFIG_PACKAGE_wg3526 is not set
+# CONFIG_PACKAGE_wg827 is not set
+# CONFIG_PACKAGE_wififix is not set
+# CONFIG_PACKAGE_wrt1900 is not set
+# CONFIG_PACKAGE_ws1208v2 is not set
+# CONFIG_PACKAGE_x750 is not set
+# CONFIG_PACKAGE_z8102 is not set
+# end of Router Specific
+
+#
+# Splash Screens
+#
+# CONFIG_PACKAGE_ext-splash is not set
+# CONFIG_PACKAGE_ext-splashconfig is not set
+# CONFIG_PACKAGE_splash is not set
+# CONFIG_PACKAGE_status is not set
+# end of Splash Screens
+
+#
+# Themes
+#
+# CONFIG_PACKAGE_ext-login is not set
+# CONFIG_PACKAGE_ext-theme is not set
+# CONFIG_PACKAGE_luci-theme-argondark is not set
+CONFIG_PACKAGE_luci-theme-material=y
+# CONFIG_PACKAGE_luci-theme-materialgrey is not set
+# CONFIG_PACKAGE_luci-theme-tomato is not set
+# CONFIG_PACKAGE_theme-data is not set
+# end of Themes
+
+#
+# Wifi
+#
+CONFIG_PACKAGE_extra-wifi=y
+# end of Wifi
+
+# CONFIG_PACKAGE_ext-ex is not set
+# CONFIG_PACKAGE_ext-fcc is not set
+# CONFIG_PACKAGE_ext-fccm is not set
+# CONFIG_PACKAGE_ext-freedom is not set
+# CONFIG_PACKAGE_ext-h721 is not set
+# CONFIG_PACKAGE_ext-huasifei is not set
+# CONFIG_PACKAGE_ext-huasifei16 is not set
+# CONFIG_PACKAGE_ext-indro is not set
+# CONFIG_PACKAGE_ext-lte16 is not set
+# CONFIG_PACKAGE_ext-ltetest is not set
+# CONFIG_PACKAGE_ext-mesh-master is not set
+# CONFIG_PACKAGE_ext-mesh-node is not set
+# CONFIG_PACKAGE_ext-rbsxtr is not set
+# CONFIG_PACKAGE_ext-rooter-lite is not set
+CONFIG_PACKAGE_ext-rooter16=y
+# CONFIG_PACKAGE_ext-rooter4 is not set
+# CONFIG_PACKAGE_ext-rooter8-vpn is not set
+# CONFIG_PACKAGE_ext-rooterbcm16 is not set
+# CONFIG_PACKAGE_ext-sky is not set
+# CONFIG_PACKAGE_ext-wifirepeat is not set
+# CONFIG_PACKAGE_ext-world is not set
+# CONFIG_PACKAGE_ext-world16 is not set
+# end of ROOter
